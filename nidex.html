@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter Shop BD | Premium Ice Frost Winter Collection</title>
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Fonts & Keyframes -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    
+    * {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    /* Subtle background cold fog animation */
+    @keyframes fogFloat {
+      0% { transform: translate(-5%, -5%) scale(1); opacity: 0.35; }
+      50% { transform: translate(5%, 5%) scale(1.08); opacity: 0.55; }
+      100% { transform: translate(-5%, -5%) scale(1); opacity: 0.35; }
+    }
+    
+    .bg-fog-layer {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 50% 30%, rgba(200, 235, 255, 0.25), transparent 70%),
+                  radial-gradient(circle at 80% 70%, rgba(180, 220, 250, 0.2), transparent 60%);
+      animation: fogFloat 14s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    /* Custom Glassmorphism */
+    .ice-glass {
+      background: rgba(240, 248, 255, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(200, 230, 255, 0.5);
+    }
+    
+    .ice-glass-dark {
+      background: rgba(15, 30, 48, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(100, 180, 240, 0.2);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e0f2fe;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #38bdf8;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0284c7;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative overflow-x-hidden min-h-screen">
+
+  <!-- Interactive Snow Canvas -->
+  <canvas id="snowCanvas" class="fixed inset-0 pointer-events-none z-30"></canvas>
+
+  <!-- Sticky Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-cyan-900 via-sky-900 to-indigo-950 text-sky-100 text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-inner flex justify-between items-center relative z-40">
+    <div class="hidden md:flex items-center gap-2 text-sky-300">
+      <i data-lucide="snowflake" class="w-4 h-4 animate-spin" style="animation-duration: 8s;"></i>
+      <span>Free Shipping on Orders Over ৳১৯৯৯</span>
+    </div>
+    <div class="mx-auto md:mx-0 flex items-center gap-2">
+      <span class="bg-sky-500/20 text-sky-200 px-2.5 py-0.5 rounded-full border border-sky-400/30 text-xs font-semibold">WINTER SHOP BD 2026</span>
+      <span>Use Code: <strong class="text-amber-300 underline font-mono tracking-wider">WINTER2026</strong> for 20% OFF</span>
+    </div>
+    <div class="hidden lg:flex items-center gap-4 text-xs">
+      <button onclick="toggleSnow()" id="snowBtn" class="hover:text-amber-300 flex items-center gap-1 transition">
+        <i data-lucide="snowflake" class="w-3.5 h-3.5"></i> Snow Effect: <span id="snowStatus" class="font-bold text-emerald-300">ON</span>
+      </button>
+      <span class="text-sky-400">|</span>
+      <a href="#about-section" class="hover:text-amber-300 transition">About Us</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar Header -->
+  <header class="sticky top-0 z-40 ice-glass border-b border-sky-100/60 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-700 flex items-center justify-center text-white shadow-md shadow-sky-500/20 group-hover:scale-105 transition transform">
+          <i data-lucide="snowflake" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-tight bg-gradient-to-r from-slate-900 via-sky-950 to-blue-900 bg-clip-text text-transparent block leading-tight">
+            Winter Shop<span class="text-sky-500 ml-1">BD</span>
+          </span>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-sky-600">Ice Frost Collection</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-700 text-sm">
+        <button onclick="filterCategory('All')" class="hover:text-sky-600 transition py-1 border-b-2 border-transparent hover:border-sky-500">All Items</button>
+        <button onclick="filterCategory('Men')" class="hover:text-sky-600 transition py-1 border-b-2 border-transparent hover:border-sky-500">Men</button>
+        <button onclick="filterCategory('Women')" class="hover:text-sky-600 transition py-1 border-b-2 border-transparent hover:border-sky-500">Women</button>
+        <button onclick="filterCategory('Kids')" class="hover:text-sky-600 transition py-1 border-b-2 border-transparent hover:border-sky-500">Kids</button>
+        <button onclick="filterCategory('Teens')" class="hover:text-sky-600 transition py-1 border-b-2 border-transparent hover:border-sky-500">Teens</button>
+        <button onclick="filterCategory('Accessories')" class="hover:text-sky-600 transition py-1 border-b-2 border-transparent hover:border-sky-500">Accessories</button>
+        <a href="#about-section" class="text-sky-700 font-semibold hover:text-sky-900 transition py-1">About Us</a>
+      </nav>
+
+      <!-- Search & Utility Controls -->
+      <div class="flex items-center gap-3">
+        <!-- Search Input Box -->
+        <div class="relative hidden sm:block w-48 md:w-64">
+          <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="Search winter wear..." class="w-full bg-white/80 border border-sky-200 rounded-full pl-9 pr-4 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white shadow-inner transition">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-2.5"></i>
+        </div>
+
+        <!-- Wishlist Drawer Trigger -->
+        <button onclick="openWishlistDrawer()" class="relative p-2.5 rounded-full hover:bg-sky-100/70 text-slate-700 transition">
+          <i data-lucide="heart" class="w-5 h-5"></i>
+          <span id="wishlistBadge" class="absolute -top-1 -right-1 bg-amber-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white shadow-sm">0</span>
+        </button>
+
+        <!-- Shopping Cart Drawer Trigger -->
+        <button onclick="openCartDrawer()" class="relative p-2.5 rounded-full bg-sky-600 hover:bg-sky-700 text-white shadow-md shadow-sky-600/30 transition transform hover:scale-105">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="cartBadge" class="absolute -top-1 -right-1 bg-amber-400 text-slate-900 text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-white shadow-sm">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- FIXED FLOATING OFFER COUNTDOWN TIMER (Top-Right Widget) -->
+  <div class="fixed top-24 right-4 z-30 ice-glass-dark text-white p-3.5 rounded-2xl shadow-2xl border border-sky-400/30 w-64 backdrop-blur-md hidden sm:block animate-bounce-slow">
+    <div class="flex items-center justify-between border-b border-sky-800/80 pb-2 mb-2">
+      <div class="flex items-center gap-2">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+        </span>
+        <span class="text-xs font-bold tracking-wide uppercase text-sky-200">Flash Offer Ends In</span>
+      </div>
+      <i data-lucide="flame" class="w-4 h-4 text-amber-400"></i>
+    </div>
+    <div class="grid grid-cols-4 gap-1 text-center font-mono">
+      <div class="bg-slate-900/80 p-1 rounded border border-sky-500/20">
+        <span id="timerHours" class="block text-sm font-black text-amber-300">08</span>
+        <span class="text-[9px] text-slate-400 uppercase">Hrs</span>
+      </div>
+      <div class="bg-slate-900/80 p-1 rounded border border-sky-500/20">
+        <span id="timerMins" class="block text-sm font-black text-amber-300">42</span>
+        <span class="text-[9px] text-slate-400 uppercase">Min</span>
+      </div>
+      <div class="bg-slate-900/80 p-1 rounded border border-sky-500/20">
+        <span id="timerSecs" class="block text-sm font-black text-amber-300">19</span>
+        <span class="text-[9px] text-slate-400 uppercase">Sec</span>
+      </div>
+      <div class="bg-slate-900/80 p-1 rounded border border-sky-500/20">
+        <span id="timerMs" class="block text-sm font-black text-amber-300">80</span>
+        <span class="text-[9px] text-slate-400 uppercase">Ms</span>
+      </div>
+    </div>
+    <div class="mt-2.5 pt-2 border-t border-sky-800/80 text-[11px] text-center text-sky-200 flex justify-between items-center">
+      <span>Discount Voucher:</span>
+      <span class="bg-amber-400 text-slate-950 px-2 py-0.5 rounded font-black font-mono">WINTER2026</span>
+    </div>
+  </div>
+
+  <!-- HERO BANNER SECTION (Ice Frost Aesthetic) -->
+  <section class="relative bg-gradient-to-b from-sky-950 via-slate-900 to-slate-900 text-white overflow-hidden py-16 lg:py-24">
+    <div class="bg-fog-layer"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-sky-500/20 border border-sky-400/30 text-sky-300 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
+            <i data-lucide="snowflake" class="w-4 h-4 text-sky-400"></i>
+            Authentic Bangladeshi Winter Apparel
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+            Embrace The Chill in <br>
+            <span class="bg-gradient-to-r from-sky-300 via-cyan-200 to-blue-300 bg-clip-text text-transparent">Ice Frost Elegance</span>
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+            Discover 50+ curated premium jackets, thermals, hoodies, and accessories designed specifically for maximum winter comfort and high-street fashion.
+          </p>
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#product-grid-section" class="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-sky-500/30 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+              <span>Explore Collection</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#about-section" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-6 py-3.5 rounded-xl backdrop-blur-md transition">
+              About Winter Shop BD
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Image Stack -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-sky-400 to-cyan-300 opacity-30 blur-xl"></div>
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=800&q=80" alt="Winter Collection" class="relative rounded-3xl object-cover w-full h-[420px] shadow-2xl border border-sky-300/30">
+            <div class="absolute -bottom-6 -left-6 bg-slate-900/90 border border-sky-400/30 p-4 rounded-2xl backdrop-blur-md shadow-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white">100% Thermal Lock</div>
+                <div class="text-[10px] text-slate-400">Guaranteed warmth in sub-10°C</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER TABS (Fabrilife Style Layout) -->
+  <section class="py-8 bg-sky-50/60 border-y border-sky-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <i data-lucide="layers" class="w-5 h-5 text-sky-600"></i>
+          Shop By Category
+        </h2>
+        <span id="activeCategoryCount" class="text-xs font-semibold text-slate-500 bg-white px-3 py-1 rounded-full border border-sky-200">Showing 50 Items</span>
+      </div>
+
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="categoryTabs">
+        <button onclick="filterCategory('All')" class="cat-btn active bg-sky-600 text-white font-semibold px-5 py-2.5 rounded-xl text-xs sm:text-sm whitespace-nowrap shadow-sm transition">
+          All Products (50)
+        </button>
+        <button onclick="filterCategory('Men')" class="cat-btn bg-white hover:bg-sky-100/60 text-slate-700 font-medium px-5 py-2.5 rounded-xl text-xs sm:text-sm border border-sky-200/80 whitespace-nowrap transition">
+          Men's Collection (10)
+        </button>
+        <button onclick="filterCategory('Women')" class="cat-btn bg-white hover:bg-sky-100/60 text-slate-700 font-medium px-5 py-2.5 rounded-xl text-xs sm:text-sm border border-sky-200/80 whitespace-nowrap transition">
+          Women's Apparel (10)
+        </button>
+        <button onclick="filterCategory('Kids')" class="cat-btn bg-white hover:bg-sky-100/60 text-slate-700 font-medium px-5 py-2.5 rounded-xl text-xs sm:text-sm border border-sky-200/80 whitespace-nowrap transition">
+          Kids Wear (10)
+        </button>
+        <button onclick="filterCategory('Teens')" class="cat-btn bg-white hover:bg-sky-100/60 text-slate-700 font-medium px-5 py-2.5 rounded-xl text-xs sm:text-sm border border-sky-200/80 whitespace-nowrap transition">
+          Teen Trends (10)
+        </button>
+        <button onclick="filterCategory('Accessories')" class="cat-btn bg-white hover:bg-sky-100/60 text-slate-700 font-medium px-5 py-2.5 rounded-xl text-xs sm:text-sm border border-sky-200/80 whitespace-nowrap transition">
+          Winter Accessories (10)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN PRODUCT CATALOG GRID (50 Items Total, Fabrilife Card Style) -->
+  <section id="product-grid-section" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="productGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
+      <!-- Dynamic JS Rendering for 50 Product Cards Here -->
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about-section" class="py-20 bg-gradient-to-b from-sky-900 to-slate-950 text-white relative overflow-hidden my-12">
+    <div class="bg-fog-layer"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="bg-sky-500/20 border border-sky-400/30 text-sky-300 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+          Who We Are
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight">
+          About Winter Shop BD
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+          Founded with a passion for high-performance thermal fashion, Winter Shop BD brings world-class cold-weather apparel designed engineered specifically for Bangladesh's seasonal winter demands.
+        </p>
+      </div>
+
+      <!-- 3 Key Value Pillars -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="ice-glass-dark p-8 rounded-3xl space-y-4 hover:border-sky-400/50 transition">
+          <div class="w-12 h-12 rounded-2xl bg-sky-500/20 text-sky-300 flex items-center justify-center font-bold">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Thermo-Tech Weave</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Our clothing incorporates multi-layered fleece lining and high-density cotton insulation to retain maximum body heat without adding bulky weight.
+          </p>
+        </div>
+
+        <div class="ice-glass-dark p-8 rounded-3xl space-y-4 hover:border-sky-400/50 transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Eco-Conscious Fabrics</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            We prioritize sustainable organic cotton blends and recycled insulation fibers, ensuring eco-friendly production across all 50 product categories.
+          </p>
+        </div>
+
+        <div class="ice-glass-dark p-8 rounded-3xl space-y-4 hover:border-sky-400/50 transition">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-300 flex items-center justify-center font-bold">
+            <i data-lucide="check-circle" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Precision Fit Architecture</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Tailored specifically for South Asian body sizing standards. From S to XXL, every piece undergoes rigorous quality checks for comfort and durability.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="mt-16 pt-12 border-t border-sky-800/60 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-sky-300 font-mono">100K+</div>
+          <div class="text-xs text-slate-400 uppercase mt-1">Happy Customers</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-sky-300 font-mono">50+</div>
+          <div class="text-xs text-slate-400 uppercase mt-1">Winter Designs</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-sky-300 font-mono">64</div>
+          <div class="text-xs text-slate-400 uppercase mt-1">District Delivery</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-sky-300 font-mono">4.9 ★</div>
+          <div class="text-xs text-slate-400 uppercase mt-1">User Rating</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAILS / QUICK VIEW MODAL (Where Colors & Sizes Are Selected) -->
+  <div id="productModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4 hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-sky-100 relative">
+      <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 p-6 gap-6">
+        <!-- Modal Image Gallery -->
+        <div>
+          <img id="modalMainImg" src="" alt="" class="w-full h-80 object-cover rounded-2xl border border-slate-100 shadow-sm">
+        </div>
+
+        <!-- Modal Product Info -->
+        <div class="space-y-4">
+          <div>
+            <span id="modalCategory" class="text-[10px] font-bold uppercase tracking-wider text-sky-600 bg-sky-100 px-2.5 py-1 rounded-md">Category</span>
+            <h3 id="modalTitle" class="text-xl font-bold text-slate-900 mt-2">Product Title</h3>
+            <div class="flex items-center gap-2 mt-1">
+              <div class="flex text-amber-400 text-xs">★★★★★</div>
+              <span id="modalReviews" class="text-xs text-slate-400">(48 reviews)</span>
+            </div>
+          </div>
+
+          <div class="flex items-baseline gap-3">
+            <span id="modalCurrentPrice" class="text-2xl font-black text-slate-900">৳0</span>
+            <span id="modalOldPrice" class="text-sm text-slate-400 line-through">৳0</span>
+            <span id="modalDiscountBadge" class="bg-red-100 text-red-600 text-xs font-bold px-2 py-0.5 rounded">-0%</span>
+          </div>
+
+          <p id="modalDesc" class="text-xs text-slate-600 leading-relaxed">High quality thermal winter product crafted for Bangladesh's cold winter days.</p>
+
+          <!-- Color Selector Options -->
+          <div>
+            <label class="block text-xs font-bold text-slate-800 mb-2">Select Color:</label>
+            <div id="modalColorContainer" class="flex items-center gap-2"></div>
+          </div>
+
+          <!-- Size Selector Options -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="block text-xs font-bold text-slate-800">Select Size:</label>
+              <span id="sizeError" class="text-[10px] text-red-500 hidden font-bold">Please select a size!</span>
+            </div>
+            <div id="modalSizeContainer" class="flex flex-wrap gap-2"></div>
+          </div>
+
+          <!-- Add to Cart CTA -->
+          <div class="pt-2 flex items-center gap-3">
+            <button onclick="confirmAddToCart()" class="flex-1 bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-4 rounded-xl shadow-md shadow-sky-600/30 flex items-center justify-center gap-2 transition">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+              <span>Add To Shopping Bag</span>
+            </button>
+            <button onclick="toggleModalWishlist()" id="modalWishlistBtn" class="p-3 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 transition">
+              <i data-lucide="heart" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOPPING CART SLIDE-OVER DRAWER -->
+  <div id="cartDrawer" class="fixed inset-0 z-50 flex justify-end bg-slate-950/60 backdrop-blur-sm hidden transition-opacity duration-300">
+    <div class="bg-white w-full max-w-md h-full shadow-2xl flex flex-col justify-between p-6">
+      
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+        <div class="flex items-center gap-2">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-sky-600"></i>
+          <h3 class="font-bold text-slate-900 text-lg">Your Shopping Bag</h3>
+        </div>
+        <button onclick="closeCartDrawer()" class="text-slate-400 hover:text-slate-600">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Free Shipping Progress Bar -->
+      <div class="bg-sky-50 p-3 rounded-xl border border-sky-100 my-4">
+        <div class="flex justify-between text-xs font-semibold text-sky-900 mb-1">
+          <span id="shippingText">Spend ৳১৯৯৯ for FREE Shipping</span>
+          <span id="shippingPercent">0%</span>
+        </div>
+        <div class="w-full bg-sky-200 h-2 rounded-full overflow-hidden">
+          <div id="shippingBar" class="bg-sky-600 h-full w-0 transition-all duration-500"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items Container -->
+      <div id="cartItemsContainer" class="flex-1 overflow-y-auto space-y-4 pr-1">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Checkout Footer -->
+      <div class="border-t border-slate-100 pt-4 space-y-3 mt-4">
+        <div class="flex justify-between text-xs text-slate-500">
+          <span>Subtotal</span>
+          <span id="cartSubtotal" class="font-bold text-slate-900">৳0</span>
+        </div>
+        <div class="flex justify-between text-xs text-slate-500">
+          <span>Discount (WINTER2026)</span>
+          <span id="cartDiscount" class="font-bold text-emerald-600">-৳0</span>
+        </div>
+        <div class="flex justify-between text-base font-black text-slate-900 pt-2 border-t border-slate-100">
+          <span>Total Payable</span>
+          <span id="cartTotal" class="text-sky-600">৳0</span>
+        </div>
+        <button onclick="alert('Order Placed Successfully! Winter Shop BD will contact you soon.')" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-sky-600/30 transition flex items-center justify-center gap-2">
+          <span>Proceed To Checkout</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- WISHLIST DRAWER -->
+  <div id="wishlistDrawer" class="fixed inset-0 z-50 flex justify-end bg-slate-950/60 backdrop-blur-sm hidden transition-opacity duration-300">
+    <div class="bg-white w-full max-w-md h-full shadow-2xl flex flex-col justify-between p-6">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+        <div class="flex items-center gap-2">
+          <i data-lucide="heart" class="w-5 h-5 text-amber-500"></i>
+          <h3 class="font-bold text-slate-900 text-lg">Your Wishlist</h3>
+        </div>
+        <button onclick="closeWishlistDrawer()" class="text-slate-400 hover:text-slate-600">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <div id="wishlistItemsContainer" class="flex-1 overflow-y-auto space-y-4 my-4 pr-1">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 border border-sky-400/30">
+    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400"></i>
+    <span id="toastMsg" class="text-xs font-semibold">Item added to bag!</span>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-12 border-t border-sky-900/40 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 text-white font-bold text-lg mb-3">
+          <i data-lucide="snowflake" class="w-5 h-5 text-sky-400"></i>
+          Winter Shop BD
+        </div>
+        <p class="text-slate-400 leading-relaxed">Your premier online winter fashion store in Bangladesh. High quality fabrics, modern frost styling, and fast nationwide delivery.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#product-grid-section" class="hover:text-sky-300">All Collection</a></li>
+          <li><a href="#about-section" class="hover:text-sky-300">About Us</a></li>
+          <li><a href="#" class="hover:text-sky-300">Size Chart Guide</a></li>
+          <li><a href="#" class="hover:text-sky-300">Delivery Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Customer Support</h4>
+        <ul class="space-y-2">
+          <li>Hotline: +880 1700-000000</li>
+          <li>Email: support@wintershopbd.com</li>
+          <li>Address: Gulshan-2, Dhaka, Bangladesh</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Newsletter</h4>
+        <p class="mb-2">Subscribe to get winter promo discounts.</p>
+        <div class="flex">
+          <input type="email" placeholder="Your email..." class="bg-slate-900 border border-slate-800 rounded-l-lg px-3 py-2 w-full text-white focus:outline-none focus:border-sky-500">
+          <button class="bg-sky-600 text-white px-4 rounded-r-lg font-bold">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-900 text-center text-slate-500">
+      © 2026 Winter Shop BD. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- MAIN JAVASCRIPT LOGIC -->
+  <script src="app.js"></script>
+</body>
+</html>
