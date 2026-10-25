@@ -13,7 +13,7 @@
       { id: 7, name: "Men Denim Sherpa Jacket", category: "Men", price: 2950, oldPrice: 3600, img: "https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=600&q=80", colors: ["#0284c7", "#1e3a8a", "#334155", "#0f172a"] },
       { id: 8, name: "Men Turtleneck Pullover", category: "Men", price: 1450, oldPrice: 1800, img: "https://www.charlestyrwhitt.com/dw/image/v2/AAWJ_PRD/on/demandware.static/-/Sites-ctshirts-master/default/dw494f96bf/KNR/KNR0007NAV/KNR0007NAV_MODEL_FRONT_01.jpg?sw=430&sh=538&sm=fit", colors: ["#1e293b", "#991b1b", "#047857", "#d97706"] },
       { id: 9, name: "Men Quilted Gilet Vest", category: "Men", price: 1800, oldPrice: 2200, img: "https://cdn00.nnnow.com/web-images/large/styles/FNE8R76PX3W/1784196259213/1.jpg", colors: ["#0369a1", "#0f172a", "#334155", "#059669"] },
-      { id: 10, name: "hand glaps", category: "Men", price: 3800, oldPrice: 4600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjql4MH-wAaCgSqxLuwL9h2Ow4MmpQzsILcZR-qd-7w&s", colors: ["#1e293b", "#334155", "#1e3a8a", "#78350f"] },https://images.u
+      { id: 10, name: "hand glaps", category: "Men", price: 3800, oldPrice: 4600, img: "https://www.chuchesmoto.com/cdn/shop/products/41-2joOwOaL.jpg?v=1697910207", colors: ["#1e293b", "#334155", "#1e3a8a", "#78350f"] },
 
       // WOMEN (11-20)
       { id: 11, name: "Women Cashmere Long Coat", category: "Women", price: 4500, oldPrice: 5500, img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80", colors: ["#991b1b", "#1e293b", "#d97706", "#0284c7"] },
