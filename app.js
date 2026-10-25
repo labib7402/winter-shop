@@ -4,15 +4,15 @@
     // 50 COMPLETE WINTER PRODUCTS (10 in Men, 10 in Women, 10 in Kids, 10 in Teens, 10 in Accessories)
     const products = [
       // MEN (1-10)
-      { id: 1, name: "Men Arctic Puffer Jacket", category: "Men", price: 2850, oldPrice: 3500, img: "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=600&q=80", colors: ["#1e293b", "#0369a1", "#047857", "#991b1b"] },
+      { id: 1, name: "Men Arctic Puffer Jacket", category: "Men", price: 2850, oldPrice: 3500, img: "https://www.featurestores.de/cdn/shop/files/9071-BR-1405-10007-003-ICB-Arctic-Puffer-Jacket2345678909.jpg?v=1792761668&width=700", colors: ["#1e293b", "#0369a1", "#047857", "#991b1b"] },
       { id: 2, name: "Men Fleece Zip Hoodie", category: "Men", price: 1650, oldPrice: 2100, img: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80", colors: ["#334155", "#475569", "#0f172a", "#7c2d12"] },
       { id: 3, name: "Men Knit Wool Sweater", category: "Men", price: 1950, oldPrice: 2400, img: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80", colors: ["#0284c7", "#1e293b", "#d97706", "#059669"] },
       { id: 4, name: "Men Thermal Innerwear Set", category: "Men", price: 1250, oldPrice: 1600, img: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80", colors: ["#0f172a", "#334155", "#e2e8f0", "#1e3a8a"] },
-      { id: 5, name: "Men Classic Trench Coat", category: "Men", price: 4200, oldPrice: 5200, img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80", colors: ["#78350f", "#1e293b", "#334155", "#065f46"] },
+      { id: 5, name: "Men Classic Trench Coat", category: "Men", price: 4200, oldPrice: 5200, img: "https://content.gapinc.com/b/0059/676/061/cn59676061.jpg?width=960", colors: ["#78350f", "#1e293b", "#334155", "#065f46"] },
       { id: 6, name: "Men Heavy Bomber Jacket", category: "Men", price: 3100, oldPrice: 3800, img: "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=600&q=80", colors: ["#065f46", "#1e293b", "#7c2d12", "#0284c7"] },
       { id: 7, name: "Men Denim Sherpa Jacket", category: "Men", price: 2950, oldPrice: 3600, img: "https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=600&q=80", colors: ["#0284c7", "#1e3a8a", "#334155", "#0f172a"] },
       { id: 8, name: "Men Turtleneck Pullover", category: "Men", price: 1450, oldPrice: 1800, img: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=600&q=80", colors: ["#1e293b", "#991b1b", "#047857", "#d97706"] },
-      { id: 9, name: "Men Quilted Gilet Vest", category: "Men", price: 1800, oldPrice: 2200, img: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80", colors: ["#0369a1", "#0f172a", "#334155", "#059669"] },
+      { id: 9, name: "Men Quilted Gilet Vest", category: "Men", price: 1800, oldPrice: 2200, img: "https://cdn00.nnnow.com/web-images/large/styles/FNE8R76PX3W/1784196259213/1.jpg", colors: ["#0369a1", "#0f172a", "#334155", "#059669"] },
       { id: 10, name: "Men Woolen Blazer", category: "Men", price: 3800, oldPrice: 4600, img: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80", colors: ["#1e293b", "#334155", "#1e3a8a", "#78350f"] },
 
       // WOMEN (11-20)
