@@ -16,8 +16,8 @@
       { id: 10, name: "hand glaps", category: "Men", price: 3800, oldPrice: 4600, img: "https://www.chuchesmoto.com/cdn/shop/products/41-2joOwOaL.jpg?v=1697910207", colors: ["#1e293b", "#334155", "#1e3a8a", "#78350f"] },
 
       // WOMEN (11-20)
-      { id: 11, name: "Women Cashmere Long Coat", category: "Women", price: 4500, oldPrice: 5500, img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80", colors: ["#991b1b", "#1e293b", "#d97706", "#0284c7"] },
-      { id: 12, name: "Women Oversized Knit Cardigan", category: "Women", price: 2100, oldPrice: 2600, img: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80", colors: ["#f59e0b", "#0284c7", "#1e293b", "#059669"] },
+      { id: 11, name: "Women Cashmere Long Coat", category: "Women", price: 4500, oldPrice: 5500, img: "https://m.media-amazon.com/images/I/71BCVB5DQKL._AC_UY1000_.jpg", colors: ["#991b1b", "#1e293b", "#d97706", "#0284c7"] },
+      { id: 12, name: "Women Oversized Knit Cardigan", category: "Women", price: 2100, oldPrice: 2600, img: "https://img4.dhresource.com/webp/m/0x0/f3/albu/bw/j/28/6a35b90d-3e07-44b4-9935-4ad8e07044cf.jpg", colors: ["#f59e0b", "#0284c7", "#1e293b", "#059669"] },
       { id: 13, name: "Women Fleece Parka Jacket", category: "Women", price: 3200, oldPrice: 3900, img: "https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=600&q=80", colors: ["#047857", "#0369a1", "#1e293b", "#991b1b"] },
       { id: 14, name: "Women Soft Wool Sweater", category: "Women", price: 1750, oldPrice: 2200, img: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80", colors: ["#e11d48", "#0284c7", "#334155", "#059669"] },
       { id: 15, name: "Women Cropped Puffer Jacket", category: "Women", price: 2600, oldPrice: 3200, img: "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=600&q=80", colors: ["#0284c7", "#0f172a", "#991b1b", "#d97706"] },
