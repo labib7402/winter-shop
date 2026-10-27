@@ -134,17 +134,23 @@
     }
 
     // CATEGORY FILTER
-    function filterCategory(cat) {
-      activeCategory = cat;
-      document.querySelectorAll(".cat-btn").forEach(btn => {
-        btn.classList.remove("bg-sky-600", "text-white", "active");
-        btn.classList.add("bg-white", "text-slate-700");
-      });
-      event.target.classList.remove("bg-white", "text-slate-700");
-      event.target.classList.add("bg-sky-600", "text-white", "active");
-      
-      renderProducts();
-    }
+    
+function filterCategory(cat) {
+  activeCategory = cat;
+
+  document.querySelectorAll(".cat-btn").forEach(btn => {
+    btn.classList.remove(
+      "bg-sky-600",
+      "text-white",
+      "active"
+    );
+
+    btn.classList.add("bg-white", "text-slate-700");
+  });
+
+  renderProducts();
+}
+
 
     // SEARCH FILTER
     function handleSearch() {
