@@ -52,6 +52,7 @@
       { id: 38, name: "Teen Knit Beanie & Scarf Set", category: "Teens", price: 850, oldPrice: 1100, img: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=600&q=80", colors: ["#d97706", "#0f172a", "#0284c7", "#047857"] },
       { id: 39, name: "Teen colar Sweatshirt", category: "Teens", price: 1350, oldPrice: 1700, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-Pwqtrg2FmT8gXtwjPzfhzMdeiVJF7hiRXARNr_Ebw&s=10", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
       { id: 40, name: "2pis", category: "Teens", price: 1350, oldPrice: 1700, img: "https://img.kwcdn.com/product/fancy/2f53bf43-55ce-4968-9c0b-12d7a578e72e.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
+      
       // ACCESSORIES (41-50)
       { id: 41, name: "glass", category: "Accessories", price: 650, oldPrice: 850, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBks5GJeSv3Wu5B5I-OfMs5mGZhDGXs_uTGz2-Cy_Yw&s=10", colors: ["#0f172a", "#334155", "#991b1b", "#0284c7"] },
       { id: 42, name: "Soft Cashmere Winter Scarf", category: "Accessories", price: 950, oldPrice: 1250, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCmHKgGrUG6VYThcCFyZPzMl_WOSR8vgRbYU5mB8YYA&s=10", colors: ["#d97706", "#0284c7", "#0f172a", "#059669"] },
