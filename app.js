@@ -52,9 +52,9 @@
       { id: 38, name: "Teen Knit Beanie & Scarf Set", category: "Teens", price: 850, oldPrice: 1100, img: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=600&q=80", colors: ["#d97706", "#0f172a", "#0284c7", "#047857"] },
       { id: 39, name: "Teen colar Sweatshirt", category: "Teens", price: 1350, oldPrice: 1700, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-Pwqtrg2FmT8gXtwjPzfhzMdeiVJF7hiRXARNr_Ebw&s=10", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
       { id: 40, name: "2pis", category: "Teens", price: 1350, oldPrice: 1700, img: "https://img.kwcdn.com/product/fancy/2f53bf43-55ce-4968-9c0b-12d7a578e72e.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
-      { id: 43, name: "2pis", category: "Teens", price: 1350, oldPrice: 1700, img: "https://i5.walmartimages.com/seo/Posijego-Teen-Girls-Two-Piece-Tracksuit-Set-Heart-Print-Hoodie-and-Sweatpants-Fall-Winter-Clothing-Sets-for-Big-Girls_d88d4b4a-d0bc-4859-ae1d-15f042d08d6b.25873fca0590db69cc00e0c5c9d92083.jpeg?odnHeight=480&odnWidth=360&odnBg=FFFFFFhttps://i5.walmartimages.com/seo/Posijego-Teen-Girls-Two-Piece-Tracksuit-Set-Heart-Print-Hoodie-and-Sweatpants-Fall-Winter-Clothing-Sets-for-Big-Girls_d88d4b4a-d0bc-4859-ae1d-15f042d08d6b.25873fca0590db69cc00e0c5c9d92083.jpeg?odnHeight=480&odnWidth=360&odnBg=FFFFFF", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
-      
-      // ACCESSORIES (41-50)
+      { id: 41, name: "2pis", category: "Teens", price: 1350, oldPrice: 1700, img: "https://img.kwcdn.com/product/fancy/2f53bf43-55ce-4968-9c0b-12d7a578e72e.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
+      { id: 42, name: "sliper", category: "Teens", price: 420, oldPrice: 600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18SyxGcQ_Gr8a91k-I1Lf7n0W2EDXqReZiqBOxz8whg&s", colors: ["#0284c7", "#1e3a8a", "#334155", "#0f172a"] },
+      // ACCESSORIES (41-51) 
       { id: 41, name: "glass", category: "Accessories", price: 650, oldPrice: 850, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBks5GJeSv3Wu5B5I-OfMs5mGZhDGXs_uTGz2-Cy_Yw&s=10", colors: ["#0f172a", "#334155", "#991b1b", "#0284c7"] },
       { id: 42, name: "Soft Cashmere Winter Scarf", category: "Accessories", price: 950, oldPrice: 1250, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCmHKgGrUG6VYThcCFyZPzMl_WOSR8vgRbYU5mB8YYA&s=10", colors: ["#d97706", "#0284c7", "#0f172a", "#059669"] },
       { id: 43, name: "Fleece Lined Beanie Hat", category: "Accessories", price: 450, oldPrice: 600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69Udr6Atx802um1BJ8MO3qncTzNTv5Px6IAEhX9a0GQ&s=10", colors: ["#1e293b", "#0369a1", "#991b1b", "#047857"] },
@@ -64,6 +64,7 @@
       { id: 47, name: "Leather Fur-Lined Gloves", category: "Accessories", price: 1250, oldPrice: 1600, img: "https://www.pickett.co.uk/cdn/shop/files/ladies-plain-fur-lined-gloves-gloves-859201_1000x.jpg?v=1763428436", colors: ["#1e293b", "#78350f", "#0f172a", "#0284c7"] },
       { id: 48, name: "Chunky Knit infinity Scarf", category: "Accessories", price: 880, oldPrice: 1150, img: "https://i.etsystatic.com/13499751/r/il/5ec5f6/1107968410/il_570xN.1107968410_7h56.jpg", colors: ["#0284c7", "#d97706", "#0f172a", "#047857"] },
       { id: 50, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
+      { id: 51, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
     ];
 
     // APP STATE
