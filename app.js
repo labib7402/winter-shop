@@ -63,9 +63,10 @@
       { id: 46, name: "Insulated Thermal Neck Gaiter", category: "Accessories", price: 480, oldPrice: 650, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSiJ462iyvvV51mb33QLYuNGc9ul2I54JQSP3hI2IGjw&s=10", colors: ["#0f172a", "#0369a1", "#334155", "#991b1b"] },
       { id: 47, name: "Leather Fur-Lined Gloves", category: "Accessories", price: 1250, oldPrice: 1600, img: "https://www.pickett.co.uk/cdn/shop/files/ladies-plain-fur-lined-gloves-gloves-859201_1000x.jpg?v=1763428436", colors: ["#1e293b", "#78350f", "#0f172a", "#0284c7"] },
       { id: 48, name: "Chunky Knit infinity Scarf", category: "Accessories", price: 880, oldPrice: 1150, img: "https://i.etsystatic.com/13499751/r/il/5ec5f6/1107968410/il_570xN.1107968410_7h56.jpg", colors: ["#0284c7", "#d97706", "#0f172a", "#047857"] },
-      { id: 50, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
-      { id: 51, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
-      { id: 52, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
+      { id: 50, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 51, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 52, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_h6NDd6qZI7DPlEQFj067OMUZSD0TV3Zi31b3leHbUw&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 53, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPNuHpf0wz_-1Xafges4I6n1eA-2GRTFZ0PHC4hbxkw&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
     ];
 
     // APP STATE
