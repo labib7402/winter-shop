@@ -65,6 +65,7 @@
       { id: 48, name: "Chunky Knit infinity Scarf", category: "Accessories", price: 880, oldPrice: 1150, img: "https://i.etsystatic.com/13499751/r/il/5ec5f6/1107968410/il_570xN.1107968410_7h56.jpg", colors: ["#0284c7", "#d97706", "#0f172a", "#047857"] },
       { id: 50, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
       { id: 51, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
+      { id: 52, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2JAH7ghZPZdRM6YgqEj1Pp9r5goVD-AD_LPSDqPKlQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] }
     ];
 
     // APP STATE
