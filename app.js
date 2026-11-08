@@ -55,8 +55,8 @@
       { id: 41, name: "2pis", category: "Teens", price: 1350, oldPrice: 1700, img: "https://img.kwcdn.com/product/fancy/2f53bf43-55ce-4968-9c0b-12d7a578e72e.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
       { id: 42, name: "sliper", category: "Teens", price: 420, oldPrice: 600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18SyxGcQ_Gr8a91k-I1Lf7n0W2EDXqReZiqBOxz8whg&s", colors: ["#0284c7", "#1e3a8a", "#334155", "#0f172a"] },
       // ACCESSORIES (41-51) 
-      { id: 41, name: "glass", category: "Accessories", price: 650, oldPrice: 850, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBks5GJeSv3Wu5B5I-OfMs5mGZhDGXs_uTGz2-Cy_Yw&s=10", colors: ["#0f172a", "#334155", "#991b1b", "#0284c7"] },
-      { id: 42, name: "Soft Cashmere Winter Scarf", category: "Accessories", price: 950, oldPrice: 1250, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCmHKgGrUG6VYThcCFyZPzMl_WOSR8vgRbYU5mB8YYA&s=10", colors: ["#d97706", "#0284c7", "#0f172a", "#059669"] },
+      { id: 41.1, name: "glass", category: "Accessories", price: 650, oldPrice: 850, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBks5GJeSv3Wu5B5I-OfMs5mGZhDGXs_uTGz2-Cy_Yw&s=10", colors: ["#0f172a", "#334155", "#991b1b", "#0284c7"] },
+      { id: 42.1, name: "Soft Cashmere Winter Scarf", category: "Accessories", price: 950, oldPrice: 1250, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCmHKgGrUG6VYThcCFyZPzMl_WOSR8vgRbYU5mB8YYA&s=10", colors: ["#d97706", "#0284c7", "#0f172a", "#059669"] },
       { id: 43, name: "Fleece Lined Beanie Hat", category: "Accessories", price: 450, oldPrice: 600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69Udr6Atx802um1BJ8MO3qncTzNTv5Px6IAEhX9a0GQ&s=10", colors: ["#1e293b", "#0369a1", "#991b1b", "#047857"] },
       { id: 44, name: "Plush Velvet Ear Warmers", category: "Accessories", price: 550, oldPrice: 750, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWfYlCJCdMGBdPQrTdtQ9ihL7eU-maw8JvbVKZ9t0AQ&s=10", colors: ["#f0c2ec", "#0f172a", "#a5adb3", "#ebdc8a"] },
       { id: 45, name: "Plush Velvet Ear Warmers", category: "Accessories", price: 380, oldPrice: 500, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwdyhgv-xJ1x_HMHU7mK5wwnI5h-43lDo-CUEN1iihtQ&s=10", colors: ["#e11d48", "#0f172a", "#0284c7", "#059669"] },
@@ -70,7 +70,8 @@
       { id: 54, name: "winter chador for women", category: "Accessories", price: 290, oldPrice: 400, img: "https://levoilestores.com/cdn/shop/files/1_db5ff49c-e3ac-45fc-bbee-758690bcf5c9.jpg?v=1768528995&width=1080", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 55, name: "winter chador for man", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU8vDPHjpfKkPiCjCuersvCLACbh-iunAOdKQZFjgHzQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 56, name: "winter cap ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXvpzh_aCj6oIydr-V9-sNk-jbEmaAmY9mF_kmIMuEA&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
-      { id: 56, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHLnu0hXYkjVXurrmXGqrqC1zy_ptLklvlAYks4EokQ&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 57, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHLnu0hXYkjVXurrmXGqrqC1zy_ptLklvlAYks4EokQ&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 58, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzQpHOMIWf2wGzg4m8Z6kf-tk0xUi8Ep1H1oT21pcgg&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
     ];
 
     // APP STATE
