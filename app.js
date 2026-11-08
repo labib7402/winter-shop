@@ -69,7 +69,8 @@
       { id: 53, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPNuHpf0wz_-1Xafges4I6n1eA-2GRTFZ0PHC4hbxkw&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 54, name: "winter chador for women", category: "Accessories", price: 290, oldPrice: 400, img: "https://levoilestores.com/cdn/shop/files/1_db5ff49c-e3ac-45fc-bbee-758690bcf5c9.jpg?v=1768528995&width=1080", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 55, name: "winter chador for man", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU8vDPHjpfKkPiCjCuersvCLACbh-iunAOdKQZFjgHzQ&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
-      { id: 56, name: "winter ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXvpzh_aCj6oIydr-V9-sNk-jbEmaAmY9mF_kmIMuEA&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 56, name: "winter cap ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXvpzh_aCj6oIydr-V9-sNk-jbEmaAmY9mF_kmIMuEA&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 56, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHLnu0hXYkjVXurrmXGqrqC1zy_ptLklvlAYks4EokQ&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
     ];
 
     // APP STATE
