@@ -72,6 +72,7 @@
       { id: 56, name: "winter cap ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXvpzh_aCj6oIydr-V9-sNk-jbEmaAmY9mF_kmIMuEA&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 57, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHLnu0hXYkjVXurrmXGqrqC1zy_ptLklvlAYks4EokQ&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 58, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzQpHOMIWf2wGzg4m8Z6kf-tk0xUi8Ep1H1oT21pcgg&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 59, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS86hI7emnY1jHRom0Eqfe2w8RMrxmsKmfR-wSdtOSmSA&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
     ];
 
     // APP STATE
