@@ -75,6 +75,7 @@
       { id: 59, name: "winter mablar ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS86hI7emnY1jHRom0Eqfe2w8RMrxmsKmfR-wSdtOSmSA&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 60, name: "winter hand glaph ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPNg2Ji75SLr9C7dqxzd-NVLUlGnhcK8ir-RMYnxLXQ&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 61, name: "winter cap ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsocXwwRwrBqcNsMuxD7QsclaWF4rJrEqfgp54EGuF_A&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 62, name: "winter cap for men ", category: "Accessories", price: 290, oldPrice: 400, img: "https://i5.walmartimages.com/seo/Men-Winter-Hats-for-Guys-Cool-Beanies-Lined-Knitted-Warm-Cap-Ear-flaps-for-Men-Outdoor-Fleece-Hat-Navy_1d3dc796-1bd6-4aab-b5ee-1cc8d3987996.3df849f3ee419b23286f72a5d2b6b861.jpeg", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
     ];
 
     // APP STATE
