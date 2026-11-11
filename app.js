@@ -77,6 +77,8 @@
       { id: 61, name: "winter cap ", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsocXwwRwrBqcNsMuxD7QsclaWF4rJrEqfgp54EGuF_A&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 62, name: "winter cap for men ", category: "Accessories", price: 290, oldPrice: 400, img: "https://i5.walmartimages.com/seo/Men-Winter-Hats-for-Guys-Cool-Beanies-Lined-Knitted-Warm-Cap-Ear-flaps-for-Men-Outdoor-Fleece-Hat-Navy_1d3dc796-1bd6-4aab-b5ee-1cc8d3987996.3df849f3ee419b23286f72a5d2b6b861.jpeg", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 63, name: "winter cap for men ", category: "Accessories", price: 290, oldPrice: 400, img: "https://www.cottontraders.com/dw/image/v2/BCDM_PRD/on/demandware.static/-/Library-Sites-cotton-traders-global/default/dw4fc889c6/images/header/navigation/41_ddm_xmas_09.jpg?sw=500", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 64, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm2AhahmbdizRsHiuN0-GcBtER-mCe8EMd-3SYQovRg&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+
     ];
 
     // APP STATE
