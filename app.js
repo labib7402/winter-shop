@@ -82,6 +82,7 @@
       { id: 65, name: "Woolen Neck Warmer Scarf", category: "Accessories", price: 350, oldPrice: 500, img: "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=500&q=80", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 66, name: "Thermal Woolen Socks Pair", category: "Accessories", price: 180, oldPrice: 250, img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=500&q=80", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 67, name: "Winter Fleece Ear Muffs", category: "Accessories", price: 220, oldPrice: 320, img: "https://images.unsplash.com/photo-1511556820780-d912e42b4980?w=500&q=80", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 68, name: "Touchscreen Winter Gloves", category: "Accessories", price: 320, oldPrice: 450, img: "https://images.unsplash.com/photo-1542362567-b07e54358753?w=500&q=80", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
     ];
 
     // APP STATE
