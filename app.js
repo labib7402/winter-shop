@@ -80,6 +80,7 @@
       { id: 64, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm2AhahmbdizRsHiuN0-GcBtER-mCe8EMd-3SYQovRg&s", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 64, name: "Thermal Fleece Insoles Pair", category: "Accessories", price: 290, oldPrice: 400, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpSUz92hbiMwysx_XLDD4X5YmKYjPJtTYtuPGhKnSriw&s=10", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
       { id: 65, name: "Woolen Neck Warmer Scarf", category: "Accessories", price: 350, oldPrice: 500, img: "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=500&q=80", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
+      { id: 66, name: "Thermal Woolen Socks Pair", category: "Accessories", price: 180, oldPrice: 250, img: "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=500&q=80", colors: ["#334155", "#0f172a", "#d97706", "#0284c7"] },
     ];
 
     // APP STATE
