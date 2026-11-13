@@ -40,6 +40,7 @@
       { id: 30, name: "Kids Quilted Warm Vest", category: "Kids", price: 1250, oldPrice: 1600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTagsLZaIAXQnUYNM8clDNTM6gMk0MNyc5EUlNZ7D4Kzg&s=10", colors: ["#0369a1", "#1e293b", "#059669", "#d97706"] },
       { id: 30.1, name: "Kids Plush Fleece Pajama Set", category: "Kids", price: 1050, oldPrice: 1350, img: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=500&q=80", colors: ["#0284c7", "#e11d48", "#f59e0b", "#059669"] },
       { id: 30.3, name: "Kids Sherpa Lined Sweatshirt", category: "Kids", price: 1300, oldPrice: 1650, img: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=500&q=80", colors: ["#334155", "#047857", "#e11d48", "#0f172a"] },
+      { id: 30.4, name: "Kids Cozy Winter Booties", category: "Kids", price: 750, oldPrice: 950, img: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=500&q=80", colors: ["#d97706", "#0284c7", "#1e293b", "#f59e0b"] },
 
 
       // TEENS (31-40)
