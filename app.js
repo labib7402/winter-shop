@@ -38,7 +38,7 @@
       { id: 28, name: "Kids Soft Woolen Mittens", category: "Kids", price: 350, oldPrice: 500, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHTJs32xh2fhapaI8GTIujEBsXfsgGaJ4X-STNIQ-R7g&s=10", colors: ["#e11d48", "#0284c7", "#f59e0b", "#334155"] },
       { id: 29, name: "Kids hudis", category: "Kids", price: 1150, oldPrice: 1500, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_wjV0FQeezstvSl_9oaMs17JvMvk3dvwerbTqPJ_d3Q&s=10", colors: ["#f59e0b", "#047857", "#0284c7", "#991b1b"] },
       { id: 30, name: "Kids Quilted Warm Vest", category: "Kids", price: 1250, oldPrice: 1600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTagsLZaIAXQnUYNM8clDNTM6gMk0MNyc5EUlNZ7D4Kzg&s=10", colors: ["#0369a1", "#1e293b", "#059669", "#d97706"] },
-
+      { id: 30.1, name: "Kids Plush Fleece Pajama Set", category: "Kids", price: 1050, oldPrice: 1350, img: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=500&q=80", colors: ["#0284c7", "#e11d48", "#f59e0b", "#059669"] },
       // TEENS (31-40)
       { id: 31, name: "Teen Streetwear Heavy Hoodie", category: "Teens", price: 1850, oldPrice: 2300, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrwSFw0x1UHAPbABH4La7RxiL6DBEb_LIVwXVP-vOAA&s", colors: ["#0f172a", "#0284c7", "#991b1b", "#047857"] },
       { id: 32, name: "Teen Colorblock Windbreaker", category: "Teens", price: 2100, oldPrice: 2600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5CJnukE0pz_E2ZXT1QQelY9Q3uvDjw3ZgPmEnogGA-A&s=10", colors: ["#0369a1", "#d97706", "#059669", "#1e293b"] },
