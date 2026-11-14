@@ -41,7 +41,7 @@
       { id: 30.1, name: "Kids Plush Fleece Pajama Set", category: "Kids", price: 1050, oldPrice: 1350, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVEdlbp_4lPhyL6x6OeynFnL6tHiEfbk65-NH5UWyzg&s=10", colors: ["#0284c7", "#e11d48", "#f59e0b", "#059669"] },
       { id: 30.2, name: "Kids Knitted Winter Scarf", category: "Kids", price: 450, oldPrice: 650, img: "https://images.unsplash.com/photo-1545048702-79362596cdc9?w=500&q=80", colors: ["#991b1b", "#0369a1", "#1e293b", "#d97706"] },
       { id: 30.3, name: "Kids Sherpa Lined Sweatshirt", category: "Kids", price: 1300, oldPrice: 1650, img: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=500&q=80", colors: ["#334155", "#047857", "#e11d48", "#0f172a"] },
-      { id: 30.4, name: "Kids Cozy Winter Booties", category: "Kids", price: 750, oldPrice: 950, img: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=500&q=80", colors: ["#d97706", "#0284c7", "#1e293b", "#f59e0b"] },
+      { id: 30.4, name: "Kids Cozy Winter Booties", category: "Kids", price: 750, oldPrice: 950, img: "https://static-01.daraz.com.bd/p/6b3141a0a9d80bd582fbd73278c99b75.jpg", colors: ["#d97706", "#0284c7", "#1e293b", "#f59e0b"] },
       { id: 30.5, name: "Kids Cute Animal Ear Muff", category: "Kids", price: 400, oldPrice: 550, img: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=500&q=80", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
 
       // TEENS (31-40)
