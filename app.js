@@ -43,6 +43,7 @@
       { id: 30.3, name: "Kids Sherpa Lined Sweatshirt", category: "Kids", price: 1300, oldPrice: 1650, img: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=500&q=80", colors: ["#334155", "#047857", "#e11d48", "#0f172a"] },
       { id: 30.4, name: "Kids Cozy Winter Booties", category: "Kids", price: 750, oldPrice: 950, img: "https://static-01.daraz.com.bd/p/6b3141a0a9d80bd582fbd73278c99b75.jpg", colors: ["#d97706", "#0284c7", "#1e293b", "#f59e0b"] },
       { id: 30.5, name: "Kids Cute Animal Ear Muff", category: "Kids", price: 400, oldPrice: 550, img: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=500&q=80", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
+      { id: 30.5, name: "Kids Cute Animal Ear Muff", category: "Kids", price: 400, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8CTqGnff7B8z_-YjofOGP3Wsp0wNyaFGrw2WIwYp4xQ&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
 
       // TEENS (31-40)
       { id: 31, name: "Teen Streetwear Heavy Hoodie", category: "Teens", price: 1850, oldPrice: 2300, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrwSFw0x1UHAPbABH4La7RxiL6DBEb_LIVwXVP-vOAA&s", colors: ["#0f172a", "#0284c7", "#991b1b", "#047857"] },
