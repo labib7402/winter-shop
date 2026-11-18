@@ -47,7 +47,7 @@
       { id: 30.7, name: "Kids Cute Animal Ear Muff", category: "Kids", price: 400, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzlMhuuBsy5Cof_GBeVnAcvr6EAi4BUlra24V5cd-fvw&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
       { id: 30.8, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://imagedelivery.net/_ES4-kRCuVWNGrfHn8UtvA/janandjul.com/FHB-DNP-5.jpg/w=300,h=300,fit=crop", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
       { id: 30.9, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://m.media-amazon.com/images/I/71hZopN9OML._AC_UY1100_.jpg", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
-      { id: 30.10, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://m.media-amazon.com/images/I/71hZopN9OML._AC_UY1100_.jpg", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
+      { id: 30.10, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_pDvS3-LHJlzU1rvEk9PLBMuu0CuzKzaeqVuhLvFNA&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
 
       // TEENS (31-40)
       { id: 31, name: "Teen Streetwear Heavy Hoodie", category: "Teens", price: 1850, oldPrice: 2300, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrwSFw0x1UHAPbABH4La7RxiL6DBEb_LIVwXVP-vOAA&s", colors: ["#0f172a", "#0284c7", "#991b1b", "#047857"] },
