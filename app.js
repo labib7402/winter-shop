@@ -47,7 +47,7 @@
       { id: 30.7, name: "Kids Cute Animal Ear Muff", category: "Kids", price: 400, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzlMhuuBsy5Cof_GBeVnAcvr6EAi4BUlra24V5cd-fvw&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
       { id: 30.8, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://imagedelivery.net/_ES4-kRCuVWNGrfHn8UtvA/janandjul.com/FHB-DNP-5.jpg/w=300,h=300,fit=crop", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
       { id: 30.9, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://m.media-amazon.com/images/I/71hZopN9OML._AC_UY1100_.jpg", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
-      { id: 30.10, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_pDvS3-LHJlzU1rvEk9PLBMuu0CuzKzaeqVuhLvFNA&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
+      { id: 30.11, name: "", category: "Kids", price: 400, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_pDvS3-LHJlzU1rvEk9PLBMuu0CuzKzaeqVuhLvFNA&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
 
       // TEENS (31-40)
       { id: 31, name: "Teen Streetwear Heavy Hoodie", category: "Teens", price: 1850, oldPrice: 2300, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrwSFw0x1UHAPbABH4La7RxiL6DBEb_LIVwXVP-vOAA&s", colors: ["#0f172a", "#0284c7", "#991b1b", "#047857"] },
@@ -63,7 +63,7 @@
       { id: 39, name: "Teen colar Sweatshirt", category: "Teens", price: 1350, oldPrice: 1700, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-Pwqtrg2FmT8gXtwjPzfhzMdeiVJF7hiRXARNr_Ebw&s=10", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
       { id: 40, name: "2pis", category: "Teens", price: 1350, oldPrice: 1700, img: "https://img.kwcdn.com/product/fancy/2f53bf43-55ce-4968-9c0b-12d7a578e72e.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
       { id: 41, name: "2pis", category: "Teens", price: 1350, oldPrice: 1700, img: "https://img.kwcdn.com/product/fancy/2f53bf43-55ce-4968-9c0b-12d7a578e72e.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp", colors: ["#0369a1", "#059669", "#1e293b", "#334155"] },
-      { id: 42, name: "sliper", category: "Teens", price: 420, oldPrice: 600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18SyxGcQ_Gr8a91k-I1Lf7n0W2EDXqReZiqBOxz8whg&s", colors: ["#0284c7", "#1e3a8a", "#334155", "#0f172a"] },
+      { id: 42, name: "sliper", category: "Teens", price: 420, oldPrice: 600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGPFMg5gRWuIOLOtq4X69Bo07n4h6QXxvnuDGafBE-lQ&s=10", colors: ["#0284c7", "#1e3a8a", "#334155", "#0f172a"] },
       // ACCESSORIES (41-51) 
       { id: 41.1, name: "glass", category: "Accessories", price: 650, oldPrice: 850, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBks5GJeSv3Wu5B5I-OfMs5mGZhDGXs_uTGz2-Cy_Yw&s=10", colors: ["#0f172a", "#334155", "#991b1b", "#0284c7"] },
       { id: 42.1, name: "Soft Cashmere Winter Scarf", category: "Accessories", price: 950, oldPrice: 1250, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCmHKgGrUG6VYThcCFyZPzMl_WOSR8vgRbYU5mB8YYA&s=10", colors: ["#d97706", "#0284c7", "#0f172a", "#059669"] },
