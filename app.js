@@ -50,6 +50,7 @@
       { id: 30.11, name: "", category: "Kids", price: 300, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_pDvS3-LHJlzU1rvEk9PLBMuu0CuzKzaeqVuhLvFNA&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
       { id: 30.12, name: "", category: "Kids", price: 1700, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXefQilGvaFLDRHOA5KXZUeZLI5gQj-gV0FGd74Pxgg&s0", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
 
+      
       // TEENS (31-40)
       { id: 31, name: "Teen Streetwear Heavy Hoodie", category: "Teens", price: 1850, oldPrice: 2300, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrwSFw0x1UHAPbABH4La7RxiL6DBEb_LIVwXVP-vOAA&s", colors: ["#0f172a", "#0284c7", "#991b1b", "#047857"] },
       { id: 32, name: "Teen Colorblock Windbreaker", category: "Teens", price: 2100, oldPrice: 2600, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5CJnukE0pz_E2ZXT1QQelY9Q3uvDjw3ZgPmEnogGA-A&s=10", colors: ["#0369a1", "#d97706", "#059669", "#1e293b"] },
