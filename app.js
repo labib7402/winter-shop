@@ -49,6 +49,7 @@
       { id: 30.9, name: "", category: "Kids", price: 720, oldPrice: 550, img: "https://m.media-amazon.com/images/I/71hZopN9OML._AC_UY1100_.jpg", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
       { id: 30.11, name: "", category: "Kids", price: 300, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_pDvS3-LHJlzU1rvEk9PLBMuu0CuzKzaeqVuhLvFNA&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
       { id: 30.12, name: "", category: "Kids", price: 1700, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXefQilGvaFLDRHOA5KXZUeZLI5gQj-gV0FGd74Pxgg&s0", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
+      { id: 30.12, name: "", category: "Kids", price: 1700, oldPrice: 550, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqnDtJo5UBsYNraHDyYlCCvbiLLpDx61havo8Jq29_Q&s=10", colors: ["#e11d48", "#059669", "#0369a1", "#f59e0b"] },
 
       
       // TEENS (31-40)
